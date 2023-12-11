@@ -1,26 +1,30 @@
-# Task Manager
+Task Manager Readme
+This repository contains a simple task management system implemented in C. The system allows users to perform various tasks such as logging in, creating profiles, managing to-do lists, adding tasks, setting reminders, and more. Below is an overview of the files and functionalities:
 
-This is a simple task management system written in C. It allows users to create profiles, manage to-do lists, add tasks, set reminders, and more.
+Files:
+main.c
+This file contains the main program logic. It provides a menu-driven interface for users to interact with the task management system. Users can perform actions such as logging in, creating profiles, managing to-do lists, adding tasks, and saving/loading tasks to/from a file.
 
-## Getting Started
+task_manager.c
+This file contains the implementation of functions related to user and task management. It includes functions for handling login and logout, creating user profiles, managing to-do lists, adding tasks, setting reminders, displaying tasks, and saving/loading tasks to/from a file.
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
-2. Compile the program: `gcc main.c task_manager.c -o task_manager`
-3. Run the program: `./task_manager`
+task_manager.h
+This header file defines structures and function declarations used in the task management system. It includes structures for users and tasks, as well as declarations for functions related to user and task management.
 
-## Features
+Functionalities:
+User Management:
+Login and Logout: Users can log in and out of the system. Only one user can be logged in at a time.
 
-- **User Authentication:** Users can log in, log out, and create profiles.
-- **Task Management:** Users can create to-do lists, add tasks, set reminders, and view tasks.
-- **File I/O:** Tasks can be saved to and loaded from a file (`tasks.txt`).
+Profile Creation: Users can create profiles by providing a username, password, name, age, and job.
 
-## Usage
+Task Management:
+To-Do List: Users can create a to-do list, although the specific implementation is marked as a placeholder and can be extended further.
 
-- Upon running the program, users are presented with a menu to perform various actions.
-- Users can log in, create profiles, manage tasks, and save/load tasks from a file.
+Add Task: Logged-in users can add tasks with a description, due date, category, labels, and additional notes.
 
-## Structure
+Display Tasks: Users can view a list of tasks, including their description, category, labels, due date, completion status, and reminder status.
 
-- `main.c`: Contains the main program logic and the menu interface.
-- `task_manager.c`: Implements functions for user authentication, task management, and file I/O.
-- `task_manager.h`: Header file containing structures and function declarations.
+Set Reminder: Users can set a reminder for a specific task.
+
+File I/O:
+Save and Load Tasks: Users can save tasks to a file (tasks.txt) and load tasks from a file. The file format is a simple text-based format, with one line per task.
